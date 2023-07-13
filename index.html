@@ -478,6 +478,10 @@
         flex-direction: column !important;
         text-align: center;
       }
+
+      html {
+        overflow-x: hidden;
+      }
     }
 
     /* 自適應樣式500結束 */
@@ -509,6 +513,10 @@
 
       .img-price {
         height: 55vh;
+      }
+
+      html {
+        overflow-x: hidden;
       }
     }
 
@@ -1047,5 +1055,9 @@
       document.body.scrollTop = 0; // For Safari
       document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     }
+
+    $(".nav-item").on("click", () => {
+      $(".navbar-toggler").click();
+    });
   </script>
 </html>
