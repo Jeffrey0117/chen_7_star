@@ -27,6 +27,11 @@
   </head>
   <style>
     @media only screen and (max-width: 2000px) {
+      .flexCol {
+        display: flex;
+        margin: auto 0;
+        justify-content: center;
+      }
       .navimg {
         width: 100px;
       }
@@ -453,6 +458,12 @@
       #reviews {
         margin-top: 130px;
       }
+
+      .copyright .flexCol {
+        display: flex;
+        flex-direction: column !important;
+        text-align: center;
+      }
     }
 
     /* 自適應樣式500結束 */
@@ -487,7 +498,7 @@
       }
     }
 
-    /* 自適應樣式400開始 */
+    /* 自適應樣式400結束 */
   </style>
   <body>
     <!-- 預約行列開始 -->
@@ -949,7 +960,10 @@
     <!-- 尾巴部分結束 -->
     <!-- 版權部分開始 -->
     <div class="copyright">
-      <p>Copyright © 2023 All Rights Reserved by 陳七星足體養生工坊</p>
+      <div class="flexCol">
+        <span>Copyright © </span>
+        <span>2023 All Rights Reserved by 陳七星足體養生工坊</span>
+      </div>
     </div>
 
     <!-- 版權部分結束 -->
